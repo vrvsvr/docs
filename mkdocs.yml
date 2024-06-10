@@ -1,0 +1,84 @@
+site_name: 🆚VR Docs
+nav:
+  - Home: index.md
+  - Controls: controls.md
+  - Getting Started:
+    - Starting a new room: start-room.md
+    - Building and sharing: building-sharing.md
+  # - Features:
+  #   - Connecting Friends: connecting-friends.md
+  #   - Quests & Challenges: quests-challenges.md
+  # - Developer Resources:
+  #   - API Reference: api-reference.md
+  #   - SDK Guides: sdk-guides.md
+  - Community:
+    - Shared quests: shared-quests.md
+    # - Contributing: contributing.md
+  - Flow Graph:
+    - Node System: node-system.md
+    - Nodes:
+      - Color Picker: nodes/colorpicker.md
+  - Changelog: changelog.md
+    # - Export: export.md
+    # - Examples:
+    #   - Test: test.md
+  # - About: about.md
+
+theme:
+  name: material
+  curstom_dir: overrides
+  name_overrides: {}
+  favicon: favico.ico
+  logo: favico.ico
+  palette:
+    primary: indigo
+    accent: green
+  font:
+    text: Roboto
+    code: Roboto Mono
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - content.action.edit
+    - navigation.sections
+    - navigation.expand
+    # - navigation.tabs
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+repo_url: https://github.com/vrvsvr/docs
+edit_uri: edit/main/
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.magiclink
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - git-revision-date

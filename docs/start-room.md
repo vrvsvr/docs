@@ -1,0 +1,1 @@
+When [🆚VR](https://vrvsvr.io) opened, the upper middle bar will have a code which can be shared with a friend to connect.
